@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AvaloniaProject">
+    <option name="projectPerEditor">
+      <map>
+        <entry key="OnlineGameStore/App.axaml" value="OnlineGameStore/OnlineGameStore.csproj" />
+        <entry key="OnlineGameStore/GameWindow.axaml" value="OnlineGameStore/OnlineGameStore.csproj" />
+        <entry key="OnlineGameStore/MainWindow.axaml" value="OnlineGameStore/OnlineGameStore.csproj" />
+        <entry key="OnlineGameStore/UserWindow.axaml" value="OnlineGameStore/OnlineGameStore.csproj" />
+        <entry key="OnlineGameStore/Window1.axaml" value="OnlineGameStore/OnlineGameStore.csproj" />
+      </map>
+    </option>
+  </component>
+</project>

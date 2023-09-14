@@ -1,0 +1,24 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="OnlineGameStore.MainWindow"
+        Title="PersonalAccount">
+    <Grid>
+            <Menu Height="25" VerticalAlignment="Top" Background="Chocolate">
+                <MenuItem Header="User" Click="MenuItem_OnClickUser"></MenuItem>
+                <MenuItem Header="Game" Click="MenuItem_OnClickGame"></MenuItem>
+                <TextBlock VerticalAlignment="Center">Поиск по играм: </TextBlock>
+                <TextBox Name="txtSearch" Width="200" Margin="10 0 0 0 " TextChanged="TxtSearch_OnTextChanged"></TextBox>
+            </Menu>
+            <DataGrid Name="OnlineGameStoreGrid" x:CompileBindings="False" Margin="0 25 0 0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding PersonalAccountID}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Имя пользователя" Binding="{Binding UserName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Название игры" Binding="{Binding GameName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Был в сети" Binding="{Binding Online}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>

@@ -1,0 +1,22 @@
+﻿<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="OnlineGameStore.UserWindow"
+        Title="UserWindow">
+    <Grid>
+        <DataGrid Name="UserGrid" x:CompileBindings="False" Margin="0 25 0 0">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID" Binding="{Binding UserID}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Имя пользователя" Binding="{Binding UserName}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата рождения" Binding="{Binding DateOfBirth}"></DataGridTextColumn>
+                <DataGridTextColumn Header="Дата регистрации" Binding="{Binding RegistrationDate}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Menu Height="25" VerticalAlignment="Top" Background="Chocolate">
+            <MenuItem Header="PersonalAccount" Click="MenuItem_OnClickPersonalAccount"></MenuItem>
+            <MenuItem Header="Game" Click="MenuItem_OnClickGame"></MenuItem>
+        </Menu>
+    </Grid>
+</Window>
